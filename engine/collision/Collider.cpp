@@ -10,19 +10,18 @@ Collider::~Collider()
 {
 }
 
-bool Collider::chcekSphereCollision(const glm::vec3& center1, float radius1,
+bool Collider::checkSphereCollision(const glm::vec3& center1, float radius1,
                                     const glm::vec3& center2, float radius2)
 {
     float distance = glm::length(center1 - center2);
     return distance <= radius1 + radius2;
 }
 
-bool Collider::chcekRaySphereCollision(const glm::vec3& rayOrg, const glm::vec3& rayDir,
+bool Collider::checkRaySphereCollision(const glm::vec3& rayOrg, const glm::vec3& rayDir,
                                        const glm::vec3& sphereCenter, float radius)
 {
     glm::vec3 oc = rayOrg - sphereCenter;
     glm::vec3 u = glm::normalize(rayDir);
-    // float a = glm::dot(rayDir, rayDir);
     float b = glm::dot(oc, u);
     float c = glm::dot(oc, oc) - (radius * radius);
     float h = (b * b) - c;

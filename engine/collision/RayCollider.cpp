@@ -14,7 +14,7 @@ RayCollider::~RayCollider()
 
 bool RayCollider::isCollide(const Sphere& sphere) const
 {
-    return Collider::chcekRaySphereCollision(_ray.origin, _ray.direction, sphere.center, sphere.radius);
+    return Collider::checkRaySphereCollision(_ray.origin, _ray.direction, sphere.center, sphere.radius);
 }
 
 bool RayCollider::isCollide(const Ray& other) const

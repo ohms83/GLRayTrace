@@ -22,9 +22,9 @@ public:
     virtual bool isCollide(const Sphere& sphere) const = 0;
     virtual bool isCollide(const Ray& ray) const = 0;
 
-    static bool chcekSphereCollision(const glm::vec3& center1, float radius1,
+    static bool checkSphereCollision(const glm::vec3& center1, float radius1,
                                      const glm::vec3& center2, float radius2);
 
-    static bool chcekRaySphereCollision(const glm::vec3& rayOrg, const glm::vec3& rayDir,
+    static bool checkRaySphereCollision(const glm::vec3& rayOrg, const glm::vec3& rayDir,
                                         const glm::vec3& sphereCenter, float radius);
 };

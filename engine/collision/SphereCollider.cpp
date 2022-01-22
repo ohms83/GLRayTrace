@@ -14,10 +14,10 @@ SphereCollider::~SphereCollider()
 
 bool SphereCollider::isCollide(const Sphere& other) const
 {
-    return Collider::chcekSphereCollision(_sphere.center, _sphere.radius, other.center, other.radius);
+    return Collider::checkSphereCollision(_sphere.center, _sphere.radius, other.center, other.radius);
 }
 
 bool SphereCollider::isCollide(const Ray& ray) const
 {
-    return Collider::chcekRaySphereCollision(ray.origin, ray.direction, _sphere.center, _sphere.radius);
+    return Collider::checkRaySphereCollision(ray.origin, ray.direction, _sphere.center, _sphere.radius);
 }
