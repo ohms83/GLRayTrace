@@ -4,6 +4,7 @@
 #include <glm/gtc/quaternion.hpp>
 
 #include <memory>
+#include <string>
 
 #include "collision/Collider.h"
 
@@ -16,6 +17,7 @@ public:
     glm::mat4 getTransform() const;
 
 public:
+    int tag;
     std::unique_ptr<Collider> collider;
 
     glm::vec3 position = {};

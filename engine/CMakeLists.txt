@@ -54,3 +54,11 @@ add_definitions(-DGLM_ENABLE_EXPERIMENTAL)
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
+
+set(TOOLS_DIR "${ENGINE_ROOT}/tools")
+
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    
+    COMMAND python3 ${TOOLS_DIR}/genheader.py
+)

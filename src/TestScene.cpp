@@ -1,9 +1,5 @@
 #include "TestScene.h"
 
-#include "engine/collision/SphereCollider.h"
-#include "engine/collision/RayCollider.h"
-#include "engine/util/PPM.h"
-
 #include <iostream>
 
 TestScene::TestScene()
@@ -17,6 +13,7 @@ TestScene::~TestScene()
 
 void TestScene::onEnter()
 {
+    Camera camera;
     camera.setViewPort(viewPortWidth, viewPortHeight);
     camera.setPerspective(45.f, (float)viewPortWidth / (float)viewPortHeight, 0.01f, 100.f);
     

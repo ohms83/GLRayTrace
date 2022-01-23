@@ -12,14 +12,12 @@ public:
     Scene();
     virtual ~Scene();
 
-    std::shared_ptr<Node> addNode();
+    std::shared_ptr<Node> newNode();
+    void addNode(std::shared_ptr<Node> node);
 
     virtual void update(float dt) {}
     virtual void render() {}
     virtual void onEnter() {}
-
-public:
-    Camera camera;
 
 protected:
     std::vector<std::shared_ptr<Node>> _nodeList;

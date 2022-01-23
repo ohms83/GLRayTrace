@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/scene/Scene.h"
+#include "engine/engine.h"
 
 class TestScene : public Scene
 {

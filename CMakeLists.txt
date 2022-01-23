@@ -15,6 +15,8 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
     src/TestScene.h
     src/TestScene.cpp
+
+    engine/engine.h
 )
 
 add_subdirectory(engine)
