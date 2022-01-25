@@ -10,8 +10,8 @@
 class Rect
 {
 public:
-    glm::vec2 getLeftTop() const;
-    glm::vec2 getRightBottom() const;
+    glm::vec2 leftTop() const;
+    glm::vec2 rightBottom() const;
 
 public:
     glm::vec2 center = {};

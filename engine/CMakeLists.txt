@@ -17,6 +17,7 @@ set(ENGINE_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 
 include(collision/CMakeLists.txt)
 include(geometry/CMakeLists.txt)
+include(render/CMakeLists.txt)
 include(scene/CMakeLists.txt)
 include(util/CMakeLists.txt)
 

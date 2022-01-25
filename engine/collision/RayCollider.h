@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Collider.h"
-#include "geometry/Ray.h"
+#include "geometry/Geometry.h"
 
 class RayCollider : public Collider
 {

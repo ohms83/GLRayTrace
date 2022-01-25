@@ -20,6 +20,7 @@ bool Collider::checkSphereCollision(const glm::vec3& center1, float radius1,
 bool Collider::checkRaySphereCollision(const glm::vec3& rayOrg, const glm::vec3& rayDir,
                                        const glm::vec3& sphereCenter, float radius)
 {
+    // https://en.wikipedia.org/wiki/Line%E2%80%93sphere_intersection
     glm::vec3 oc = rayOrg - sphereCenter;
     glm::vec3 u = glm::normalize(rayDir);
     float b = glm::dot(oc, u);

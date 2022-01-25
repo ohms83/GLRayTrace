@@ -1,5 +1,6 @@
 list(APPEND ENGINE_HEADER
     "scene/Camera.h"
+    "scene/Light.h"
     "scene/Node.h"
     "scene/Scene.h"
 )
